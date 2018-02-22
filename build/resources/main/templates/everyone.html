@@ -5,14 +5,15 @@
     <title>BlueBerry Muffins</title>
 
     <link rel="stylesheet" th:href="@{/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 
     <script type="text/javascript" th:src="@{/jquery.js}"></script>
     <script type="text/javascript" th:src="@{/client.js}"></script>
 </head>
 <body>
 <div th:each="user : ${everyone}">
-    <p th:text="${user.name} + ' : ' + ${user.userName}"></p>
+    <p th:text="${user.name} + ' : ' + ${user.userName}" class="lead text-center"></p>
 </div>
-<button id="gotoHome">Home Page</button>
+<button id="gotoHome" class="btn btn-warning">Home Page</button>
 </body>
 </html>

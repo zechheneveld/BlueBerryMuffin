@@ -5,17 +5,27 @@
     <title>BlueBerry Muffins</title>
 
     <link rel="stylesheet" th:href="@{/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 
     <script type="text/javascript" th:src="@{/jquery.js}"></script>
     <script type="text/javascript" th:src="@{/client.js}"></script>
 </head>
 <body>
-<h1>People Finder</h1>
-<form>
-    <input type="text" id="personSearch" placeholder="Enter a Name"/>
-</form>
+<h1 class="lead text-center">People Finder</h1>
+<div class="row">
+    <div class="col-md-6 card">
+        <form>
+            <input type="text" id="personSearch" placeholder="Enter a Name" />
+        </form>
+    </div>
+    <div class="col-md-3">
+        <button id="gotoPerson" class="btn btn-danger">Person Page</button>
+    </div>
+    <div class="col-md-3">
+        <button id="gotoEveryone" class="btn btn-info">Everyone Page</button>
+    </div>
 
-<button id="gotoPerson">Person Page</button>
-<button id="gotoEveryone">Everyone Page</button>
+</div>
+
 </body>
 </html>
